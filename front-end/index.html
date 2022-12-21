@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liste à papa noël</title>
+</head>
+<body>
+    <header>
+        <form class="wishTextAndButton" name="add_gift_form">
+            <div class="textWish">
+                <div class="giftText_input">
+                    <label for="giftName_input">Mon cadeau</label>
+                    <input type="text" placeholder="le cadeau de mes rêves..." name="name" id="giftName_input" class="gift_input"/>
+                </div>
+                <div class="giftText_input">
+                    <label for="giftPrice_input">Son prix</label>
+                    <input type="number" placeholder="Son prix" name="price" id="giftPrice_input" class="gift_input"/>
+                </div>
+                <div class="sliderContainer">
+                    <input type="range" min="1" max="3" value="2" class="slider" id="myRange" name="wishMeter">
+                </div>
+                <div class="addNewGiftButton">
+                    <button id="newGift_action">Nouveau cadeau</button>
+                </div>
+            </div>
+        </form>
+    </header>
+    <div class="ulList">
+        <ul id="list"></ul>
+    </div>
+    
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
